@@ -5,16 +5,16 @@ If your Kubernetes cluster does not have access to the internet, you can still i
 • Download the nginx ingress controller YAML file from the official GitHub repository: https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml
 
 # Also, here is the one-liner to deploy all the objects.
-'#https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml'
+https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml
 
 https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/deploy/static/provider/cloud/deploy.yaml
 
 
 1. You need to push 2 images to acr for deployment
 
-az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/controller:v1.8.0 --image ingress-nginx/controller:v1.8.0
+`#az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/controller:v1.8.0 --image ingress-nginx/controller:v1.8.0#
 
-az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20230407 --image ingress-nginx/kube-webhook-certgen:v20230407
+`#az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20230407 --image ingress-nginx/kube-webhook-certgen:v20230407#
 
 Assign pull access on acr to aks manage identity
 
