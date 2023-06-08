@@ -5,7 +5,7 @@ If your Kubernetes cluster does not have access to the internet, you can still i
 
 • Download the nginx ingress controller YAML file from the official GitHub repository: https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml
 
-# Also, here is the one-liner to deploy all the objects.
+## Also, here is the one-liner to deploy all the objects.
 https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml
 
 https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/deploy/static/provider/cloud/deploy.yaml
@@ -37,6 +37,6 @@ Assign pull access on acr to aks manage identity
 • Wait for the nginx ingress controller and default backend to be deployed and running: `kubectl get pods -n ingress-nginx`
 • Verify that the ingress controller and default backend services are running: `kubectl get svc -n ingress-nginx`
 
-# That's it! You should now have a working nginx ingress controller installed on your Kubernetes cluster, even without internet access.
+## That's it! You should now have a working nginx ingress controller installed on your Kubernetes cluster, even without internet access.
 
 ![image](https://github.com/Abhijeetjambaldare14/Nginx-Ingress-Controller-Kubernetes-Manifests/assets/13759950/168c0f9e-eb17-414e-af2b-c78978e51e4c)
