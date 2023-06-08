@@ -12,9 +12,9 @@ https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/dep
 
 1. You need to push 2 images to acr for deployment
 
-`az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/controller:v1.8.0 --image ingress-nginx/controller:v1.8.0`
+1.1 `az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/controller:v1.8.0 --image ingress-nginx/controller:v1.8.0`
 
-`az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20230407 --image ingress-nginx/kube-webhook-certgen:v20230407`
+1.2 `az acr import --name <acr_name> --source registry.k8s.io/ingress-nginx/kube-webhook-certgen:v20230407 --image ingress-nginx/kube-webhook-certgen:v20230407`
 
 Assign pull access on acr to aks manage identity
 
