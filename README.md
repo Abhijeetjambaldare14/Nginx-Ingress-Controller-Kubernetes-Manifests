@@ -1,5 +1,6 @@
 # Nginx-Ingress-Controller-Kubernetes-Manifests
-deploying Nginx controllers using YAML manifests.
+Deploying Nginx controllers using YAML manifests.
+
 If your Kubernetes cluster does not have access to the internet, you can still install nginx ingress controller by following these steps:
 
 • Download the nginx ingress controller YAML file from the official GitHub repository: https://github.com/kubernetes/ingress-nginx/tree/master/deploy/static/provider/baremetal/deploy.yaml
@@ -20,7 +21,7 @@ Assign pull access on acr to aks manage identity
 
 2 Edit the YAML files:
 • Edit the `deployment.yaml` file
-# Add Image URL and @sha256 to file
+## Add Image URL and @sha256 to file
 ![image](https://github.com/Abhijeetjambaldare14/Nginx-Ingress-Controller-Kubernetes-Manifests/assets/13759950/30456d30-2826-4314-a7fd-59c3a0ecb3ff)
 
 
