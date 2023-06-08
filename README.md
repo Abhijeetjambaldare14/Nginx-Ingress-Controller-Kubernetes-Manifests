@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/dep
 Assign pull access on acr to aks manage identity
 
 2 Edit the YAML files:
-• Edit the deployment.yaml file
+• Edit the `deployment.yaml` file
 # Add Image URL and @sha256 to file
 ![image](https://github.com/Abhijeetjambaldare14/Nginx-Ingress-Controller-Kubernetes-Manifests/assets/13759950/30456d30-2826-4314-a7fd-59c3a0ecb3ff)
 
@@ -28,13 +28,13 @@ Assign pull access on acr to aks manage identity
 • Transfer the edited YAML files to your Kubernetes cluster
 
 4 Apply the YAML files to your Kubernetes cluster:
-• Apply the deploy.yaml file to create the nginx ingress controller deployment, service, and config maps: kubectl apply -f deploy.yaml
+• Apply the `deployment.yaml` file to create the nginx ingress controller deployment, service, and config maps: `kubectl apply -f deployment.yaml`
 ![image](https://github.com/Abhijeetjambaldare14/Nginx-Ingress-Controller-Kubernetes-Manifests/assets/13759950/026bba13-626a-4c12-b1ea-86908fe02ab7)
 
 
 5 Verify the installation:
-• Wait for the nginx ingress controller and default backend to be deployed and running: kubectl get pods -n ingress-nginx
-• Verify that the ingress controller and default backend services are running: kubectl get svc -n ingress-nginx
+• Wait for the nginx ingress controller and default backend to be deployed and running: `kubectl get pods -n ingress-nginx`
+• Verify that the ingress controller and default backend services are running: `kubectl get svc -n ingress-nginx`
 
 # That's it! You should now have a working nginx ingress controller installed on your Kubernetes cluster, even without internet access.
 
